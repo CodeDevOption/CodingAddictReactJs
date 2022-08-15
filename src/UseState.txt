@@ -1,0 +1,10 @@
+import { createContext ,useContext, useReducer } from "react";
+export const ContextState = createContext();
+const UseState = ({reducer,initialState,children}) => {
+    <ContextState.Provider value={useReducer(reducer,initialState,children)}>
+        {children}
+    </ContextState.Provider>
+}
+
+export const useStateValue = () => useContext(ContextState);
+export default UseState

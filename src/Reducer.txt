@@ -1,0 +1,14 @@
+export const initialState ={
+    user:null,
+}
+
+const Reducer = (state,action) => {
+    switch(action.type){
+        case 'user':
+            
+        default:
+            return state;
+    }
+}
+
+export default Reducer
